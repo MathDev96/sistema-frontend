@@ -1,0 +1,58 @@
+.topnav{
+    width:100%;
+    position: fixed;
+    background-color: darkblue;
+}
+.topnav a {
+    color: #fff;
+    padding: 15px 14px;
+    display: none;
+    margin:0;
+}
+
+.topnav a:hover {
+    background-color: #808080; 
+}
+
+.topnav a.active {
+    background-color: #ff6a00;
+}
+
+.topnav a.icon {
+    width: 23px;
+    float:right;
+    padding: 15px;
+    display:block;
+    height:16px;
+}
+
+.topnav a.icon .line {
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    margin: 3px;
+}
+
+.topnav.open a {
+    display: block;
+
+}
+
+.topnav.open a.icon {
+    position: absolute;
+    top: 0;
+    right:0;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .topnav a {
+        float: left;
+        display: block;
+        text-align: center;
+    }
+
+        .topnav a.icon {
+            display: none;
+        }
+}

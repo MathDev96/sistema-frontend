@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif
+}
+
+.topnav {
+    width: 100%;
+    position: fixed;
+    background-color: darkblue;
+}
+
+    .topnav a {
+        color: #fff;
+        padding: 15px 14px;
+        display: none;
+        margin: 0;
+        text-decoration: none;
+    }
+
+        .topnav a:hover {
+            background-color: #808080;
+        }
+
+        .topnav a.active {
+            background-color: #ff6a00;
+        }
+
+        .topnav a.icon {
+            width: 23px;
+            float: right;
+            padding: 15px;
+            display: block;
+            height: 16px;
+        }
+
+            .topnav a.icon .line {
+                display: block;
+                background-color: #fff;
+                height: 2px;
+                margin: 3px;
+            }
+
+    .topnav.open a {
+        display: block;
+    }
+
+        .topnav.open a.icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+
+
+.container-degrade{
+    width: 100%;
+    height:650px;
+    animation: animation 3s ease alternate infinite;
+    background: linear-gradient(-40deg,darkblue, #5981e3), no-repeat;
+    background-size: 300% 300%;
+}
+
+.container-degrade .box-img, h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    font-family:'Times New Roman', Times, serif; 
+    color: orangered;
+    font-weight:1;
+}
+
+
+.container-degrade .clientes {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    place-items: center;
+    justify-content: space-evenly;
+}
+.clientes div {
+    width: 200px;
+    height: 200px;
+    border: solid 1px #d0b8a8;
+    margin-left: 5px;
+    border-radius: 20px;
+}
+
+.clientes div, p {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: orangered;
+    margin: 5px;
+}
+ i {
+    margin: 0;
+    width: 40%;
+    padding-top: 40px;
+}
+
+@keyframes animation {
+    from{
+        background-position: 0 50%;
+    }
+    to{
+        background-position: 100% 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .topnav a {
+        float: left;
+        display: block;
+        text-align: center;
+    }
+
+        .topnav a.icon {
+            display: none;
+        }
+}
